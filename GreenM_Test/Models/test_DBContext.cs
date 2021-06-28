@@ -40,16 +40,23 @@ namespace GreenM_Test.Models
 
             modelBuilder.Entity<ConcurrentLoginSession>(entity =>
             {
-                entity.HasKey(e => e.LogSessId)
-                    .HasName("PK_Concurrent_login_session");
+                entity.HasKey(e => e.LogSessId);
 
-                entity.ToTable("Concurrent_login_sessions");
+                entity.ToTable("Concurrent_login_session");
 
                 entity.Property(e => e.LogSessId).HasColumnName("log_sess_id");
 
-                entity.Property(e => e.MaximumConcurSess).HasColumnName("Maximum_concur_sess");
+                entity.Property(e => e.Hour).HasColumnType("datetime");
 
-                entity.Property(e => e.SessDurId).HasColumnName("sess_dur_id");
+                entity.Property(e => e.MaxConcurrSessions).HasColumnName("Max_concurr_sessions");
+
+                entity.Property(e => e.SessId).HasColumnName("sess_id");
+
+                entity.HasOne(d => d.Sess)
+                    .WithMany(p => p.ConcurrentLoginSessions)
+                    .HasForeignKey(d => d.SessId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_Concurrent_login_session_Total_accumulated_duration");
             });
 
             modelBuilder.Entity<DevicesRegistration>(entity =>
