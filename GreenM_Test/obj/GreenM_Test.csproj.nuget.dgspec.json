@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\bhy4u\\source\\repos\\GreenM_Test\\GreenM_Test\\GreenM_Test.csproj": {}
+    "C:\\Users\\bhy4u\\GreenM_GitHub\\GreenM_Repository\\GreenM_Test\\GreenM_Test.csproj": {}
   },
   "projects": {
-    "C:\\Users\\bhy4u\\source\\repos\\GreenM_Test\\GreenM_Test\\GreenM_Test.csproj": {
+    "C:\\Users\\bhy4u\\GreenM_GitHub\\GreenM_Repository\\GreenM_Test\\GreenM_Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bhy4u\\source\\repos\\GreenM_Test\\GreenM_Test\\GreenM_Test.csproj",
+        "projectUniqueName": "C:\\Users\\bhy4u\\GreenM_GitHub\\GreenM_Repository\\GreenM_Test\\GreenM_Test.csproj",
         "projectName": "GreenM_Test",
-        "projectPath": "C:\\Users\\bhy4u\\source\\repos\\GreenM_Test\\GreenM_Test\\GreenM_Test.csproj",
+        "projectPath": "C:\\Users\\bhy4u\\GreenM_GitHub\\GreenM_Repository\\GreenM_Test\\GreenM_Test.csproj",
         "packagesPath": "C:\\Users\\bhy4u\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bhy4u\\source\\repos\\GreenM_Test\\GreenM_Test\\obj\\",
+        "outputPath": "C:\\Users\\bhy4u\\GreenM_GitHub\\GreenM_Repository\\GreenM_Test\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\bhy4u\\AppData\\Roaming\\NuGet\\NuGet.Config",
